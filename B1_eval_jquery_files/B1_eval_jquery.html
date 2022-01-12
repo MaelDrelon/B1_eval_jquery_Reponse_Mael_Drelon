@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation jQuery - Votre nom ici</title>
+    <!-- Ajout fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <!-- Ajout bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/B1_eval_jquery.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top justify-content-between">
+        <span class="navbar-brand mb-0 h1">La Manu - Evaluation jQuery</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <main class="container mt-5">
+        <section class="row">
+            <div class="col">
+                <h1>#1 - redSquare experiment</h1>
+                <div class="custom-control custom-switch mb-2">
+                    <input type="checkbox" class="custom-control-input" id="toggleRedSquare">
+                    <label class="custom-control-label" for="toggleRedSquare">Activer redSquare Experiment</label>
+                </div>
+                <div class="redsquare-app">
+                    <div class="square">
+                        <i class="fa fa-rocket" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <p class="form-text text-muted">Utilisez les touches de votre clavier <i class="fa fa-arrows" aria-hidden="true"></i> pour déplacer le carré et les boutons pour le transformer</p>
+                <div class="redsquare-controls btn-group btn-group-lg d-flex mt-2">
+                    <button type="button" id="scaleUp" class="btn btn-light" disabled><i class="fa fa-expand"
+                            aria-hidden="true"></i><br><small>Agrandir</small></button>
+                    <button type="button" id="scaleDown" class="btn btn-light" disabled><i class="fa fa-compress"
+                            aria-hidden="true"></i><br><small>Rétrécir</small></button>
+                    <button type="button" id="shapeCircle" class="btn btn-light" disabled><i class="fa fa-circle"
+                            aria-hidden="true"></i><br><small>Forme : disque</small></button>
+                    <button type="button" id="shapeSquare" class="btn btn-light" disabled><i class="fa fa-square"
+                            aria-hidden="true"></i><br><small>Forme : carré</small></button>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <h1>#2 - Traversing</h1>
+            <div class="jumbotron" data-source="Alsacréation">
+                <p>Voici un exemple de navigation, structurée en listes imbriquées (source <i>inconnue</i>)</p>
+                <nav id="samplenav">
+                    <ul>
+                        <li>
+                            <a href="/">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="/services/" class="services">Nos services</a>
+                            <ul>
+                                <li><a href="/services/web/">Conception de sites web</a></li>
+                                <li><a href="/services/hebergement/">Hébergement</a></li>
+                                <li><a href="/services/developpement/">Développement d'applications web</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/entreprise/">L'entreprise</a>
+                            <ul>
+                                <li><a href="/entreprise/equipe/" class="team">Notre équipe</a></li>
+                                <li><a href="/entreprise/historique/">Historique</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/contact/">Nous contacter</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javaScript" src="assets/B1_eval_jquery.js"></script>
+
+</html>
